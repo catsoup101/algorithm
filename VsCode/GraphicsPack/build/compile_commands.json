@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/Administrator/Documents/VsCode/GraphicsPack/build",
+  "command": "C:\\Sofware\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/main.cpp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.cpp.dir\\mainPa2.cpp.obj -c C:\\Users\\Administrator\\Documents\\VsCode\\GraphicsPack\\mainPa2.cpp",
+  "file": "C:/Users/Administrator/Documents/VsCode/GraphicsPack/mainPa2.cpp",
+  "output": "CMakeFiles/main.cpp.dir/mainPa2.cpp.obj"
+},
+{
+  "directory": "C:/Users/Administrator/Documents/VsCode/GraphicsPack/build",
+  "command": "C:\\Sofware\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/main.cpp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.cpp.dir\\MainPa3.cpp.obj -c C:\\Users\\Administrator\\Documents\\VsCode\\GraphicsPack\\MainPa3.cpp",
+  "file": "C:/Users/Administrator/Documents/VsCode/GraphicsPack/MainPa3.cpp",
+  "output": "CMakeFiles/main.cpp.dir/MainPa3.cpp.obj"
+}
+]

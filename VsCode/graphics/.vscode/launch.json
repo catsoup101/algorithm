@@ -1,0 +1,37 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "local-lldb",
+            // "type": "cppdbg", // cpptools plugin
+            "type": "lldb", // clangd + codelldb plugins
+            "request": "launch",
+            "program": "${workspaceFolder}/build/linux-x64/bin/cmake",
+            "args": [
+                "-S",
+                "/Users/chris/work/dbg/hello",
+                "-B",
+                "/Users/chris/work/dbg/hello/build",
+                "-DCMAKE_TOOLCHAIN_FILE=/Users/chris/work/dbg/test/arm-none-eabi.toolchain.cmake"
+            ],
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "console": "integratedTerminal",
+            "MIMode": "lldb",
+            "setupCommands": [
+                {
+                    "description": "为 lldb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "linux-x64-build", // 依赖于 tasks.json 中名为 linux-x64-build 的步骤， 用于避免修改代码后忘记编译导致调试失败。
+            //"miDebuggerPath": "/home/zz/soft/lldb-mi/bin/lldb-mi",
+            //"miDebuggerPath": "/usr/bin/lldb-mi",
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+vector custom_relbbox(vector position)
+{
+    vector min = getbbox_min(0);
+    vector max = getbbox_max(0);
+    vector relbbox;
+
+    relbbox.x = fit(position.x, min.x, max.x, 0, 1);
+    relbbox.y = fit(position.y, min.y, max.y, 0, 1);
+    relbbox.z = fit(position.z, min.z, max.z, 0, 1);
+    
+    return relbbox;
+}
+
+float r = chf("r");
+float c = chf("c");
+
+float rel = chramp("sample",custom_relbbox(@P).y);
+
+@P.x = r * rel * cos(@P.y * c);
+@P.z = r * rel * sin(@P.y * c);

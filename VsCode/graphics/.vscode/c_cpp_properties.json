@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:/Sofware/opencv/build/install/include",
+        "C:/Sofware/opencv/sources/include",
+        "C:/Sofware/opencv/build/install/include/opencv2",
+        "C:/Sofware/opencv/build/install/x64/mingw",
+        
+        
+
+        "C:/Program Files (x86)/Eigen3",
+        "C:/Program Files (x86)/Eigen3/include"
+      ],
+      "defines": [
+        "_DEBUG",
+         "UNICODE",
+          "_UNICODE"],
+    "windowsSdkVersion": "10.0.17134.0",
+      "compilerPath": "C:\\Sofware\\Mingw\\mingw64\\bin\\gcc.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64",
+      "configurationProvider": "ms-vscode.cmake-tools"
+    }
+  ],
+  "version": 4
+}

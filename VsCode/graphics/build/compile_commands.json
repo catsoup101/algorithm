@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/Administrator/Documents/VsCode/graphics/build",
+  "command": "C:\\Sofware\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/BezierCurve.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\BezierCurve.dir\\main.cpp.obj -c C:\\Users\\Administrator\\Documents\\VsCode\\graphics\\PA1\\main.cpp",
+  "file": "C:/Users/Administrator/Documents/VsCode/graphics/PA1/main.cpp",
+  "output": "CMakeFiles/BezierCurve.dir/main.cpp.obj"
+}
+]

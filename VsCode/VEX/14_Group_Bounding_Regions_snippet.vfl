@@ -1,0 +1,10 @@
+float x = chf("x");
+float y = chf("y");
+float z = chf("z");
+
+vector cent = chv("cent");
+
+if( (@P.x > (cent.x - x) && @P.x < (cent.x + x)) && (@P.y > (cent.y - y) && @P.y < (cent.y + y)) && (@P.z > (cent.z - z) && @P.z < (cent.z + z)) )
+{
+    i@group_in_box = 1;
+}

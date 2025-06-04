@@ -1,0 +1,19 @@
+
+int n =0;
+
+foreach (int prim : i[]@neighbour)
+{
+    if(inprimgroup(0, "life", prim) == 1)
+    {
+        n++;
+    }
+}
+
+if(n < 2 || n > 3)
+{
+    i@group_life = 0;
+}
+else if(n ==3)
+{
+    i@group_life = 1;
+}

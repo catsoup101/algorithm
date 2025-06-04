@@ -1,0 +1,13 @@
+int pts[] = primpoints(0, @primnum);
+
+int num = len(pts);
+int prim = addprim(0, "poly");
+
+for(int i = 0;i < num;++i)
+{
+    int pt = pts[i];
+    vector pos = point(0,"P",pt);
+    int new_pt = addpoint(0,pos);
+    addvertex(0, prim, new_pt);
+}
+removeprim(0, @primnum, 1);

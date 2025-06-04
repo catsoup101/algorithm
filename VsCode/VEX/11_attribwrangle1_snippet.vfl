@@ -1,0 +1,18 @@
+vector position, p0 = point(0, "P", 4);
+float min_height = p0.y;
+int point_number = npoints(0);
+
+for (int i = 0; i < point_number; i++) 
+{
+    position = point(0, "P", i);
+    if(position.y < min_height)
+    {
+        min_height = position.y;
+    }
+}
+for (int j = 0; j < point_number; j++) 
+{
+    position = point(0, "P", j); 
+    position.y -=  min_height;
+    setpointattrib(0, "P", j, position);
+}

@@ -1,0 +1,15 @@
+ector pos = point(0,"P",pt);
+    pos += vNormal * dist;
+    int new_pt = addpoint(0,pos);
+
+    append(new_pts,new_pt);
+    addvertex(0,top_prim,new_pt);
+}
+
+int num = len(pts);
+for (int i = 0; i < num; i++) 
+{
+    addprim(0,"poly", pts[i],  pts[(i+1) % num],new_pts[(i+1)%num],new_pts[i]);
+}
+if(chi("remove_ori_prim") == 1)
+    removeprim(0,@primnum,0);

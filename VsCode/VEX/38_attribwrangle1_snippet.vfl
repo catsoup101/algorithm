@@ -1,0 +1,22 @@
+int length = chi("length");
+float threshold = chf("threshold");
+float brighness = 0.299 * @Cd.r + 0.587 * @Cd.g + 0.114 * @Cd.b;
+int idx = @primnum;
+
+// vector mix_color = prim(0, "Cd", idx - 25);
+
+if (brighness >= threshold)
+{
+    for (int i = 0; i < length; i++)
+    {
+        if (inprimgroup(0, "border", idx + i) == 1)
+        {
+            break;
+        }
+
+        vector col = prim(0, "Cd", idx + i);
+        // float ratio = i * 1.0 / length;
+        vector color = lerp(@Cd, col, col);
+        setprimattrib(0, "Cd", idx + i, color);
+    }
+}

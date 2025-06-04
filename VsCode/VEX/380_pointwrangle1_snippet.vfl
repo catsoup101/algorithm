@@ -1,0 +1,9 @@
+vector pos = point(1,"P",0);
+vector dir = pos - @P;
+
+float dist = length(dir);
+vector ndir = normalize(dir);
+
+v@ndir = ndir;
+f@dist = dist;
+// @P += ndir * dist *@P.y;

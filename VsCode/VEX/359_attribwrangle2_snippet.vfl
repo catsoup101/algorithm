@@ -1,0 +1,5 @@
+vector pos = @P, pos1 = point(1, "P", @ptnum);
+float factor = chf("mix");
+
+vector fpos = pos * (1 - factor) + pos1 * factor;  //线性插值
+@P = fpos;

@@ -1,0 +1,7 @@
+int pts[] = neighbours(1, @ptnum);
+
+for(int pt : pts)
+{
+    if(@ptnum < pt)
+        addprim(0,"polyline",@ptnum,pt);
+}

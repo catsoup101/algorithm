@@ -1,0 +1,15 @@
+vector pos = point(1,"P",0);
+vector dir = pos - @P;
+v@scale = {1,1,1};
+
+float dist = length(dir); //sqrt(pow(dir.x,2) + pow(dir.y,2) + pow(dir.z,2));
+v@N = normalize(dir);
+float mix_dist = chf("mix_dist");
+
+if(dist < mix_dist)
+{
+    float coef = (1 - dist/mix_dist);
+    @P -= v@N * coef * mix_dist;
+    v@scale.z += coef;
+    v@Cd = set(1 - coef,1,1);
+}

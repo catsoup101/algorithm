@@ -1,0 +1,9 @@
+vector pos = @rest, pos1 = @P;
+float factor = chf("mix") + @Time;
+
+vector fpos = pos * (1 - factor) + pos1 * factor;  //线性插值
+@P = fpos;
+
+//每次for根据连通性拆开一朵花瓣，所以每次循环每朵花瓣只有一个detail，但最终合并时变为一个detail(此时为最大距离) 
+//为了避免最终结果丢失前面花瓣距离，则修改为point层级存储一朵花瓣的距离，可以看到因为从detail转换，每朵花瓣距离相同(为单朵最大距离)
+//最终将每朵花瓣最长距离 / 最远花瓣的最大距离。归一化得到最远花瓣为1，其余全部小于1

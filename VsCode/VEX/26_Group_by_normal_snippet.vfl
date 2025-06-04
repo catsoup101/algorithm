@@ -1,0 +1,8 @@
+@N = normalize(@N);
+
+vector dir = normalize(chv("dir"));
+float theta = degrees(acos(dot(@N,dir)));
+float angle = chf("angle");
+
+i@group_by_n = (theta < angle) ? 1 : 0;
+

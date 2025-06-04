@@ -1,0 +1,5 @@
+vector rel = relbbox(0, @P);
+float x = rel.x;
+float z = rel.z;
+
+v@uv = set();

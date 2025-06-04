@@ -1,0 +1,20 @@
+{
+  "files.associations": {
+    "unordered_map": "cpp",
+    "algorithm": "cpp",
+    "vector": "cpp",
+    "iostream": "cpp",
+    "cstddef": "cpp",
+    "new": "cpp",
+    "array": "cpp",
+    "string_view": "cpp",
+    "initializer_list": "cpp",
+    "utility": "cpp"
+  },
+  "code-runner.executorMap": {
+    "cpp": "chcp 65001 "
+  },
+  "code-runner.runInTerminal": true,
+  "cmake.sourceDirectory": "C:/Users/Administrator/Documents/VsCode/ProjectC++/PA1",
+  "C_Cpp.default.compilerPath": "C:Program Filesmingw64\bingcc.exe"
+}

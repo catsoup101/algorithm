@@ -1,0 +1,6 @@
+vector orig_pos = @P;
+float x = orig_pos.x; // 计算当前点的x坐标
+float c1 = chf("c1");
+float y = (1 / x) + c1; // 计算曲线上的y坐标
+
+@P = set(x, y, orig_pos.z); // 输出新的位置

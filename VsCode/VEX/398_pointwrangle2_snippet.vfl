@@ -1,0 +1,6 @@
+float max_dist = detail(0,"dist",0);
+f@dist /= max_dist - 0.5;
+float fector = chf("t"); 
+
+f@dist = chramp("dist", f@dist);
+@P += v@ndir * f@dist * fector * @P.y; //中心距离的单位向量*中心距离映射*影响因子*绕Y轴的移动

@@ -1,0 +1,57 @@
+float dist = chf("dist");
+
+vector dir = @N;
+int new_pts[] = array(), used_prim[] = array();
+int prims[] = polyneighbours(0, @primnum);
+
+for (int prim : prims)                  //寻找是相邻的且在extrude组里的面
+{
+    if (inprimgroup(0, "extrude", prim) == 1)
+    {
+        dir = dir + prim(0, "N", prim); //求符合条件的面法线相加方向
+        append(used_prim, prim);
+    }
+}
+dir = normalize(dir);
+
+int top_prim = addprim(0, "poly"); 
+int pts[] = primpoints(0, @primnum);    //返回面序号
+for (int pt : pts)
+{
+    vector new_dir = @N;                //保存dir的数值
+    vector new_dist = dist;             //保存dist的数值
+    int pt_prims[] = pointprims(0, pt);
+    int is_in_used_prims = 0;
+
+    for (int prim : pt_prims)
+    {
+        if (find(used_prim, prim) >= 0)
+        {
+            is_in_used_prims = 1;
+            break;
+        }
+    }
+    if (is_in_used_prims == 1)
+    {
+        new_dir = dir;
+        new_dist = pow(2 * dist * dist, 0.5);
+    }
+
+    vector pos = point(0, "P", pt);
+    pos += new_dir * new_dist;
+    int new_pt = addpoint(0, pos);
+    append(new_pts, new_pt);
+    addvertex(0, top_prim, new_pt);
+}
+
+int num = len(pts);
+for (int i = 0; i < num; i++)
+{
+    addprim(0, "poly", pts[i], pts[(i + 1) % num], new_pts[(i + 1) % num], new_pts[i]);
+}
+if (chi("remove_ori_prim") == 1)
+{
+    removeprim(0, @primnum, 0);
+}
+
+

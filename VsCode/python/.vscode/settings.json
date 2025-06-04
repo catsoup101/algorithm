@@ -1,0 +1,9 @@
+{
+    "python.analysis.typeCheckingMode": "standard",
+    //"python.analysis.useLibraryCodeForTypes": true,
+    //"python.analysis.autoImportCompletions": true,
+    //"python.analysis.enablePytestSupport": true,
+    "python.terminal.activateEnvironment": false,
+    "editor.semanticHighlighting.enabled": true,
+    "python.analysis.autoImportCompletions": false,
+}

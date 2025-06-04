@@ -1,0 +1,15 @@
+int select = chi("select"), of = chi("of");
+int offset = chi("offset");
+int start = chi("start"), end = chi("end");
+int invert = chi("invert");
+
+if(invert >= 1)
+{
+    if(((@primnum - offset) % of < select) && (@primnum <= start || @primnum > (nprimitives(0) - end)))
+        i@group_sel = 1;
+}
+else
+{
+    if(((@primnum - offset) % of < select) && (@primnum >= start && @primnum < (nprimitives(0) - end)))
+        i@group_sel = 1;
+}

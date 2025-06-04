@@ -1,0 +1,6 @@
+vector min = getbbox_min(0);
+int axi = chi("align_axi");
+
+float min_height = min[axi];
+@P[axi] -= min_height;
+
