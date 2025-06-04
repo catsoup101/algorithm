@@ -1,0 +1,68 @@
+{
+  "folders": [
+    {
+      "path": "D:/Documents/vsCode"
+    },
+    {
+      "path": "D:/Documents/VsCode/Python"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.cs": "csharp",
+      "array": "cpp",
+      "string": "cpp",
+      "string_view": "cpp",
+      "span": "cpp",
+      "new": "cpp",
+      "vector": "cpp",
+      "iostream": "cpp",
+      "iomanip": "cpp",
+      "atomic": "cpp",
+      "bit": "cpp",
+      "cctype": "cpp",
+      "charconv": "cpp",
+      "clocale": "cpp",
+      "cmath": "cpp",
+      "compare": "cpp",
+      "concepts": "cpp",
+      "cstdarg": "cpp",
+      "cstddef": "cpp",
+      "cstdint": "cpp",
+      "cstdio": "cpp",
+      "cstdlib": "cpp",
+      "ctime": "cpp",
+      "cwchar": "cpp",
+      "cwctype": "cpp",
+      "deque": "cpp",
+      "map": "cpp",
+      "unordered_map": "cpp",
+      "exception": "cpp",
+      "algorithm": "cpp",
+      "functional": "cpp",
+      "iterator": "cpp",
+      "memory": "cpp",
+      "memory_resource": "cpp",
+      "numeric": "cpp",
+      "optional": "cpp",
+      "random": "cpp",
+      "system_error": "cpp",
+      "tuple": "cpp",
+      "type_traits": "cpp",
+      "utility": "cpp",
+      "format": "cpp",
+      "initializer_list": "cpp",
+      "iosfwd": "cpp",
+      "istream": "cpp",
+      "limits": "cpp",
+      "numbers": "cpp",
+      "ostream": "cpp",
+      "sstream": "cpp",
+      "stdexcept": "cpp",
+      "streambuf": "cpp",
+      "text_encoding": "cpp",
+      "typeinfo": "cpp",
+      "variant": "cpp"
+    }
+  }
+}
